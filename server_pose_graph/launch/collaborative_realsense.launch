@@ -1,0 +1,7 @@
+<launch>
+    <node name="rvizvisualisation" pkg="rviz" type="rviz" output="log" args="-d $(find chisel_ros)../config/sample.rviz" />
+    <include file="$(find chisel_ros)/launch/sample.launch"/>
+    <include file="$(find vins_estimator)/launch/multi_agent_realsense.launch"/>
+    <include file="$(find vins_estimator)/launch/multi_agent_realsense_server.launch"/>
+    <include file="$(find vins_estimator)/launch/multi_agent_rosbag_realsense.launch"/>
+</launch>
