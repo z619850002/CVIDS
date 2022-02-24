@@ -1,0 +1,38 @@
+<launch>
+    <arg name="config_path" default = "$(find server_pose_graph)/../config/euroc/euroc_config_multi_agent.yaml" />
+
+
+    <arg name="config_path_1" default = "$(find server_pose_graph)/../config/euroc/euroc_config_multi_agent.yaml" />
+
+
+    <arg name="config_path_2" default = "$(find server_pose_graph)/../config/euroc/euroc_config_multi_agent.yaml" />
+
+
+    <arg name="config_path_3" default = "$(find server_pose_graph)/../config/euroc/euroc_config_multi_agent.yaml" />
+
+
+    <arg name="config_path_4" default = "$(find server_pose_graph)/../config/euroc/euroc_config_multi_agent.yaml" />
+
+
+  
+      <arg name="vins_path" default = "$(find server_pose_graph)/../config/../" />
+    
+
+    <node name="server_pose_graph" pkg="server_pose_graph" type="server_pose_graph" output="screen">
+        <param name="config_file" type="string" value="$(arg config_path)" />
+
+        <param name="config_file_1" type="string" value="$(arg config_path_1)" />
+        <param name="config_file_2" type="string" value="$(arg config_path_2)" />
+        <param name="config_file_3" type="string" value="$(arg config_path_3)" />
+        <param name="config_file_4" type="string" value="$(arg config_path_4)" />
+
+		<param name="agent_num" type = "int" value = "4" />
+
+
+        <param name="visualization_shift_x" type="int" value="0" />
+        <param name="visualization_shift_y" type="int" value="0" />
+        <param name="skip_cnt" type="int" value="0" />
+        <param name="skip_dis" type="double" value="0" />
+    </node>
+
+</launch>

@@ -1,0 +1,4 @@
+int16 client_id
+int32 global_index
+geometry_msgs/Point position_imu
+geometry_msgs/Quaternion orientation_imu
