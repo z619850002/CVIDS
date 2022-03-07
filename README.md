@@ -26,12 +26,3 @@ Just prepare the ros workspace and clone CVIDS to the src directory of the works
 
 
 
-**For the correction process:**
-```
-./bin/main_pipeline  ./data_path  
-```
-**For example:**
-```
-./bin/main_pipeline /home/kyrie/Documents/Data
-```
-
