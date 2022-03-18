@@ -21,8 +21,12 @@ Download and install instructions can be found at: http://eigen.tuxfamily.org.
 ## ceres-solver
 We use [ceres](http://www.ceres-solver.org/) library to perform non-linear optimizations.
 
-# 2. Building the project
+# 2. Tested data
+Tested data can be found in https://pan.baidu.com/s/1L0krS1lXO4hmUnO8MXqFwQ, Extraction code: ear2
+
+# 3. Building the project
 Just prepare the ros workspace and clone CVIDS to the src directory of the workspace. Then use "catkin_make" to build the project.
+After the compilation， use roslaunch server_pose_graph collaborative.launch to activate the pipeline.
 
 
 
